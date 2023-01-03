@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+
+    <link rel="stylesheet" href="rsalarial.css">
+    <script type="text/javascript" src="./rsalarial.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="title">
+            <h1>
+            Funcionários
+            </h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div>
+
+            <h3>Lista de funcionários da impresa.</h3>
+
+        </div>
+
+        <div class="card">
+
+            <div class="lineInput">
+                <label>Funcionário</label>
+                <input type="text" id="funcionario" placeholder="Nome do funcionário">
+
+            </div>
+
+            <div class="lineInput">
+                <label>Telefone</label>
+                <input type="number" id="telefone" placeholder="Telefone do funcionário">
+
+            </div>
+
+            <div class="lineInput">
+                <label>Salário</label>
+                <input type="number" id="salario" placeholder="Salário do Funcionário">
+ 
+            </div>
+
+            <div class="lineInput">
+                <label>Porcentual do Reajuste Salárial</label>
+                <input type="number" id="rsalarial" placeholder="Porcentual do reajuste salarial">
+
+            </div>  
+            <br></br>  
+            <button onclick="funcionario.salvar()" id="btn1">Salvar</button>
+            <button onclick="funcionario.cancelar()">cancelar</button>
+            <br></br>
+            <p id="msgm"></p>
+
+        </div>
+
+        <div class="content">
+            <table border ="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Funcionário</th>
+                    <th>Telefone</th>
+                    <th>Salário</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="tbody">
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </main>
+</body>
+</html>

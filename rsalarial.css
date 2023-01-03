@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: "Special Elite", monospace;
+  background-color: aliceblue;
+}
+header {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+main {
+  padding: 30px 50px;
+}
+.title {
+  text-shadow: 3px 3px 0px grey;
+}
+
+.card {
+  background: linear-gradient(
+    45deg,
+    #180229,
+    #2c0648,
+    #410c6a,
+    #583b91,
+    #9a6ef2,
+    #9a6ef2,
+    #180229,
+    #2c0648,
+    #410c6a,
+    #583b91,
+    #9a6ef2
+  );
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-size: 700% 700%;
+  animation: fcard 45s cubic-bezier(0.16, 0.93, 0.32, 1.28) infinite;
+}
+@keyframes fcard {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.lineInput {
+  display: grid;
+  margin-bottom: 10px;
+}
+input {
+  padding: 10x;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: 0;
+}
+button {
+  border: 0;
+  padding: 10px;
+  outline: 0;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all ease 0.6s;
+}
+
+button:hover {
+  background-color: rgb(50, 51, 48);
+  color: #ffffff;
+}
+.content {
+  margin-top: 15px;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid rgb(255, 255, 255);
+  width: 100%;
+}
+table th {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 7px;
+}
+table th,
+td {
+  padding: 1px 5px;
+  text-align: left;
+}
+table td img {
+  width: 22px;
+}
+.center {
+  text-align: center;
+}
